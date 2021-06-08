@@ -1,0 +1,36 @@
+.language {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 800;
+  margin: auto 0 0 10px;
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: $basic-grey;
+  border: 1px solid $line-grey;
+  border-radius: 5px;
+  width: 30vw;
+
+  @media (min-width: $desktop) {
+    width: 9vw;
+  }
+}
+
+.language__img {
+  position: relative;
+  padding-right: 5px;
+}
+
+.language__rus,
+.language__eng {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language__svg {
+  margin-top: 8px;
+}
+
+.language__txt {
+  font-weight: 600;
+}

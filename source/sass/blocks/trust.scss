@@ -1,0 +1,18 @@
+.trust__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 51vw;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trust {
+  background-color: $basic-grey;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}

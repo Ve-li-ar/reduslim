@@ -1,0 +1,36 @@
+.button {
+  width: 87.5vw;
+  margin: 28px auto 0 auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  background-color: $green;
+  color: $basic-white;
+  padding: 12px 120px 12px 95px;
+  font-size: 14px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #7fbb98;
+  }
+
+  @media (min-width: $desktop) {
+    width: 25vw;
+    margin: 0 auto;
+  }
+}
+
+.button__span {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/arrow.svg");
+    position: absolute;
+    width: 18px;
+    left: 70px;
+    height: 12px;
+    z-index: 2;
+    top: 3px;
+  }
+}

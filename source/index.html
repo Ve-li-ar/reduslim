@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reduslim</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">Reduslim</h1>
+    <section class="major-image">
+      <div class="major-image__captions">
+        <span class="major-image__caption">Reduslim</span>
+        <span class="major-image__caption">ECO</span>
+      </div>
+      <div class="picture">
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1280px)"
+            srcset="
+              img/reduslim-desktop.webp    1x,
+              img/reduslim-desktop@2x.webp 2x
+            "
+          />
+
+          <source
+            type="image/webp"
+            srcset="img/reduslim-mobile.webp 1x, img/reduslim-mobile@2x.webp 2x"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="img/reduslim-desktop.png 1x, img/reduslim-desktop.png 2x"
+          />
+
+          <img
+            class="major-image__image"
+            src="img/reduslim-mobile.png"
+            srcset="img/reduslim-mobile@2x.png"
+            alt="Редуслим в таблетках"
+            width="223"
+            height="122"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <form class="program" method="Get" action="">
+      <h2 class="program__legend">
+        Сделай шаг<br />
+        к выздоровлению
+      </h2>
+
+      <fieldset class="program__field-text">
+        <label class="program__label" for="name"
+          ><span class="program__spans">
+            <span class="program__span program__span--black"> Ваше</span>
+            <span class="program__span program__span--green"> имя </span>
+          </span>
+          <input
+            id="name"
+            class="program__input"
+            placeholder="Алексей"
+            aria-label="Заполнить графу об имени питомца"
+            required
+          />
+        </label>
+
+        <div class="program__second">
+          <label class="program__label program__label--second" for="phone">
+            <span class="program__spans">
+              <span class="program__span program__span--black"> Ваш</span>
+              <span class="program__span program__span--green"> телефон </span>
+            </span>
+            <input
+              id="phone"
+              class="program__input program__input--phone"
+              placeholder="+7 (123) 456 78-90"
+              aria-label="Заполнить графу о номере телефона"
+              required
+            />
+          </label>
+
+          <div class="language">
+            <div class="language__wrapper">
+              <div class="language__rus">
+                <span class="language__txt" data-value="ru">RU</span>
+                <img
+                  class="language__img"
+                  src="./img/russia-mobile.png"
+                  alt="русский язык"
+                />
+                <svg
+                  class="language__svg"
+                  width="11"
+                  height="6"
+                  viewBox="0 0 11 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.18182 1L5.18182 5L9.18182 1"
+                    stroke="#212121"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="language__eng visually-hidden" data-value="en">
+              <span class="language__txt">EN</span>
+              <img
+                class="language__img"
+                src="./img/russia-mobile.png"
+                alt="анг"
+              />
+              <svg
+                class="language__svg"
+                width="11"
+                height="6"
+                viewBox="0 0 11 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.18182 1L5.18182 5L9.18182 1"
+                  stroke="#212121"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <button class="button">
+        <span class="button__span">Заказать </span>
+      </button>
+    </form>
+
+    <div class="trust">
+      <div class="trust__wrapper">
+        <span>Trusted</span>
+        <svg
+          width="13"
+          height="15"
+          viewBox="0 0 13 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="5.71429"
+            width="12.1429"
+            height="9.28572"
+            rx="3"
+            fill="#428A60"
+          />
+          <path
+            d="M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z"
+            stroke="#428A60"
+            stroke-width="2"
+          />
+        </svg>
+
+        <span>Secure</span>
+      </div>
+    </div>
+  </body>
+</html>
