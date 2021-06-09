@@ -89,8 +89,35 @@
           </label>
 
           <div class="language">
-            <div class="language__wrapper">
-              <div class="language__rus">
+            <div class="language__header">
+              <span class="language__current">
+                <span class="language__txt" data-value="ru">RU</span>
+                <img
+                  class="language__img"
+                  src="./img/russia-mobile.png"
+                  alt="русский язык"
+                />
+                <svg
+                  class="language__svg"
+                  width="11"
+                  height="6"
+                  viewBox="0 0 11 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.18182 1L5.18182 5L9.18182 1"
+                    stroke="#212121"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div class="language__body">
+              <div class="language__item">
                 <span class="language__txt" data-value="ru">RU</span>
                 <img
                   class="language__img"
@@ -114,35 +141,35 @@
                   />
                 </svg>
               </div>
-            </div>
-
-            <div class="language__eng visually-hidden" data-value="en">
-              <span class="language__txt">EN</span>
-              <img
-                class="language__img"
-                src="./img/russia-mobile.png"
-                alt="анг"
-              />
-              <svg
-                class="language__svg"
-                width="11"
-                height="6"
-                viewBox="0 0 11 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.18182 1L5.18182 5L9.18182 1"
-                  stroke="#212121"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+              <div class="language__item">
+                <span class="language__txt">EN</span>
+                <img
+                  class="language__img"
+                  src="./img/russia-mobile.png"
+                  alt="анг"
                 />
-              </svg>
+                <svg
+                  class="language__svg"
+                  width="11"
+                  height="6"
+                  viewBox="0 0 11 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.18182 1L5.18182 5L9.18182 1"
+                    stroke="#212121"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </fieldset>
+
       <button class="button">
         <span class="button__span">Заказать </span>
       </button>
@@ -175,5 +202,6 @@
         <span>Secure</span>
       </div>
     </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

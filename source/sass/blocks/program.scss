@@ -49,8 +49,14 @@
   }
 
   @media (min-width: $desktop) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+
     &--second {
       width: 15.4vw;
     }
@@ -59,11 +65,36 @@
 
 .program__input {
   margin-top: 10px;
-  padding: 16px 0 16px 0;
+  padding: 16px 10px;
   border: 1px solid $line-grey;
   font-size: 14px;
   border-radius: 5px;
   width: 87.5vw;
+  background-color: $basic-grey;
+
+  &::-webkit-input-placeholder {
+    background-color: $basic-grey;
+    padding: 16px 297px 16px 10px;
+    color: $black-opacity2;
+  }
+
+  &::-moz-placeholder {
+    background-color: $basic-grey;
+    padding: 16px 297px 16px 10px;
+    color: $black-opacity2;
+  }
+
+  &:-ms-input-placeholder {
+    background-color: $basic-grey;
+    padding: 16px 297px 16px 10px;
+    color: $black-opacity2;
+  }
+
+  &::-ms-input-placeholder {
+    background-color: $basic-grey;
+    padding: 16px 297px 16px 10px;
+    color: $black-opacity2;
+  }
 
   &::placeholder {
     background-color: $basic-grey;
@@ -74,6 +105,22 @@
   &--phone {
     padding-right: 0;
     width: 54.4vw;
+
+    &::-webkit-input-placeholder {
+      padding-right: 0;
+    }
+
+    &::-moz-placeholder {
+      padding-right: 0;
+    }
+
+    &:-ms-input-placeholder {
+      padding-right: 0;
+    }
+
+    &::-ms-input-placeholder {
+      padding-right: 0;
+    }
 
     &::placeholder {
       padding-right: 0;
@@ -90,7 +137,10 @@
 }
 
 .program__field-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   @media (min-width: $desktop) {
@@ -101,6 +151,8 @@
 }
 
 .program__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
   margin-bottom: 38px;
